@@ -38,4 +38,9 @@ Vagrant.configure(2) do |config|
       cd /vagrant
       bundle exec middleman server --watcher-force-polling --watcher-latency=1 &> ~/middleman.log &
     SHELL
+
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", "2048"]
+  end
+  
 end
