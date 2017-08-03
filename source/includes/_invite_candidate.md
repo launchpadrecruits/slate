@@ -176,3 +176,27 @@ password    | String  | No        | Third party assessment provider password
 web_token   | String  | No        | Third party assessment provider web token
 
 ### Candidate Object
+
+> Candidate and assessment object response snippet
+
+```json
+{
+  #..snip..
+  "candidate": {
+    "id": "sample_candidate_id"
+  },
+  "assessment": {
+    "id": "12345"
+  }
+}
+```
+
+Parameter   | Type    | Required  | Description
+------------|---------|-----------|-------------
+id          | String  | **Yes**   | Provided by LaunchPad on the request body. That same value should be returned in the response. Used internally by LaunchPad to identify the candidate
+
+### Assessment Object
+Parameter   | Type    | Required  | Description
+------------|---------|-----------|-------------
+id          | String  | **Yes**   | Provided by LaunchPad on the request body. That same value should be returned in the response. Used internally by LaunchPad to identify the assessment
+
