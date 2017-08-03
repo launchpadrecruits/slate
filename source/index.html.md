@@ -10,6 +10,7 @@ toc_footers:
 includes:
   - list_assessments
   - invite_candidate
+  - assessment_status
 
 search: true
 ---
