@@ -72,6 +72,28 @@ uuid        | String  | **Yes**   | Provided by LaunchPad. Unique identifier of 
 account_id  | String  | No        | Identifies the account used in the Assessment Partner system.
 
 ### Assessment Object
+
+> Assessments object array request body snippet
+
+```json
+{
+  #..snip..
+  "assessments": [
+    {
+      "id": "1",
+      "name": "First Assessment",
+      "project_id": "1",
+      "custom_id": "custom_id xyz"
+    },
+    {
+      "id": "2",
+      "name": "Second Assessment",
+      "project_id": "1",
+      "custom_id": "custom_id abc"
+    }
+  ]
+}
+```
 Parameter   | Type    | Required  | Description
 ------------|---------|-----------|-------------
 id          | String  | **Yes**   | Identifies a assessment available to an organization.
