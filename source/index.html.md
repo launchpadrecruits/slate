@@ -11,6 +11,7 @@ includes:
   - list_assessments
   - invite_candidate
   - assessment_status
+  - update_candidate
 
 search: true
 ---
