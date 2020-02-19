@@ -31,4 +31,3 @@ All responses should be returned using JSON, including errors.
 
 # Notifications
 LaunchPad can send email reminders for the integrated third party assessments. This can be enabled by LaunchPad representatives.
-
