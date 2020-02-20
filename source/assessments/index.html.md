@@ -8,10 +8,10 @@ toc_footers:
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - list_assessments
-  - invite_candidate
-  - assessment_status
-  - update_candidate
+  - assessments/list_assessments
+  - assessments/invite_candidate
+  - assessments/assessment_status
+  - assessments/update_candidate
 
 search: true
 ---
