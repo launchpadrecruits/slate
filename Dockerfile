@@ -6,7 +6,7 @@ EXPOSE 4567
 
 WORKDIR /usr/src/app
 
-RUN apk add --update nodejs g++ make
+RUN apk add --update nodejs build-base
 RUN bundle install
 
 CMD ["bundle", "exec", "middleman", "server", "--watcher-force-polling"]

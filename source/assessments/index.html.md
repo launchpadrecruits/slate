@@ -12,6 +12,7 @@ includes:
   - assessments/invite_candidate
   - assessments/assessment_status
   - assessments/update_candidate
+  - assessments/reset_candidate
 
 search: true
 ---
