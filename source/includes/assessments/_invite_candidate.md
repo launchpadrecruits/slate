@@ -34,6 +34,7 @@ When LaunchPad needs to send a candidate to a 3rd party assessment, LaunchPad wi
   "assessment": {
     "id": "12345",
     "custom_id": "custom_id",
+    "additional_time": "5"
   },
   "interview": {
     "uuid": "interview_uuid"
@@ -86,6 +87,7 @@ email         | String  | No      | Candidate's email. The assessment should be 
   "assessment": {
     "id": "12345",
     "custom_id": "custom_id",
+    "additional_time": "5"
   },
   "interview": {
     "uuid": "interview_uuid"
@@ -97,7 +99,7 @@ Parameter | Type    | Always present? | Description
 ----------|---------|-----------------|------------
 id        | String  | **Yes**         | Identifies an assessment available to an organization. Initially provided by the Assessment Partner via the [list assessment request](#list-assessments)
 custom_id | String  | No              | Custom identifier that can be used by the third partyassessment provider.
-
+additional_time | String | No | Percentage of additional time requested for the candidate. If value is “25”, candidate is added “25%” additional time. For example,100 seconds assessment base completion time. “25” additional_time value is selected, 125 seconds new assessment completion time
 ### Interview Object
 
 Parameter | Type    | Always present? | Description
@@ -199,4 +201,3 @@ id          | String  | **Yes**   | Provided by LaunchPad on the request body. T
 Parameter   | Type    | Required  | Description
 ------------|---------|-----------|-------------
 id          | String  | **Yes**   | Provided by LaunchPad on the request body. That same value should be returned in the response. Used internally by LaunchPad to identify the assessment
-
