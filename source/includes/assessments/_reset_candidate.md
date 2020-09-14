@@ -11,7 +11,7 @@ When a reset candidate is triggered in LaunchPad, LaunchPad will send a POST req
     "send_invite": false
   },
   "candidate": {
-    "id": "sample_candidate_id"
+    "candidate_id": "sample_candidate_id"
   },
   "assessment": {
     "id": "12345",
@@ -39,7 +39,7 @@ account_id          | String  | **Yes**   | Identifies the account used in the A
 <h3 id="reset-candidate-candidate-object">Candidate Object</h3>
 Parameter           | Type    | Required  | Description
 --------------------|---------|-----------|------------
-id                  | String  | **Yes**   | Provided by LaunchPad on the request body. That same value should be returned in the response. Used internally by LaunchPad to identify the candidate
+candidate_id                  | String  | **Yes**   | Provided by LaunchPad on the request body. That same value should be returned in the response. Used internally by LaunchPad to identify the candidate
 
 <h3 id="reset-candidate-assessment-object">Assessment Object</h3>
 Parameter           | Type    | Required  | Description
@@ -70,7 +70,7 @@ Exactly the same with the request content, except for the addition of the timest
     "web_token": "727FFD3A-7C56-45CC-A579-DF93FE0325E9"
   },
   "candidate": {
-    "id": "sample_candidate_id"
+    "candidate_id": "sample_candidate_id"
   },
   "assessment": {
     "id": "12345"
