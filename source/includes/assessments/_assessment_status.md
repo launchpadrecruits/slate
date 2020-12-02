@@ -39,7 +39,7 @@ Completed   | Candidate has completed the third party assessment and provided al
     "norm_group": "A",
     "result_url": "http://example.com/assessments/12345",
     "result": "Pass",
-    "status": "complete"
+    "status": "completed"
   },
   "interview": {
     "id": "interview_id",
@@ -84,7 +84,7 @@ candidate_feedback  | String  | No        | URL to the feedback form that can be
 {
   #..snip..
   "result_details": {
-    "status": "complete",
+    "status": "completed",
     "overall_score": "80",
     "project_score": "70",
     "raw_score": "80",
@@ -193,5 +193,3 @@ curl -H "Content-Type: application/json" \
 ## Polling Response
 
 The expected response is the same as the callback request body. Please refer to the [request section](#request-content).
-
-
