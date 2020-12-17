@@ -163,7 +163,7 @@ timestamp   | String  | **Yes**  | Date and time when the event occurred.
 ```shell
 # Assuming that the complete request body is in a file named body.json
 curl -H "Content-Type: application/json" \
-  -X POST -u API_KEY: -d @body.json \
+  -X POST -d @body.json \
   'https://www.launchpadrecruitsapp.com/assessments/assessment_status'
 ```
 The Assessment Partner will send a callback to notify LaunchPad where the candidate is in terms of the third party assessment process.
