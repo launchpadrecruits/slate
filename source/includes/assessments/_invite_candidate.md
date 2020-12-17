@@ -7,7 +7,7 @@
 # containing the JSON data
 
 curl -H "Content-Type: application/json" \
-  -X POST -u API_KEY: -d @body.json \
+  -X POST -d @body.json \
   'https://www.partner.com/api/invite_candidate'
 ```
 

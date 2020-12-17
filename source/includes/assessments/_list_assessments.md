@@ -4,7 +4,7 @@
 
 ```shell
 curl -H "Content-Type: application/json" \
-  -X GET -u API_KEY: \
+  -X GET \
   'https://www.partner.com/api/list_assessments?partner_account_id=12345'
 ```
 
