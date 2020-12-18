@@ -161,10 +161,7 @@ timestamp   | String  | **Yes**  | Date and time when the event occurred.
 > Sample callback request from partner sent to LaunchPad:
 
 ```shell
-# Assuming that the complete request body is in a file named body.json
-curl -H "Content-Type: application/json" \
-  -X POST -d @body.json \
-  'https://www.launchpadrecruitsapp.com/assessments/assessment_status'
+POST 'https://www.launchpadrecruitsapp.com/assessments/assessment_status'
 ```
 The Assessment Partner will send a callback to notify LaunchPad where the candidate is in terms of the third party assessment process.
 
@@ -185,9 +182,7 @@ Launchpad will continously poll the partner's polling endpoint in order to fetch
 > Sample polling request from LaunchPad sent to partner:
 
 ```shell
-curl -H "Content-Type: application/json" \
-  -X POST -u username:password \
-  'https://www.example.com/parner_polling_endpoint'
+POST 'https://www.example.com/parner_polling_endpoint'
 ```
 
 ## Polling Response

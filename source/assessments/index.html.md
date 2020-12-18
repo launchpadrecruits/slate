@@ -26,9 +26,10 @@ Welcome to the Modular Assessments Docs! Stay awhile and listen.
 
 
 # Authentication
-LaunchPad expects the assessment partner to use basic auth. Assessment partner must provide an API key to LaunchPad, LaunchPad will use the provided API key for each API request sent to the assessment partner. All API requests should be  made over HTTPS.
+LaunchPad expects the assessment partner to use basic auth. Assessment partner must provide a username and password, LaunchPad will use the provided credentials for each API request sent to the assessment partner. All API requests should be made over HTTPS.
 
 All responses should be returned using JSON, including errors.
 
 # Notifications
 LaunchPad can send email reminders for the integrated third party assessments. This can be enabled by LaunchPad representatives.
+LaunchPad expects the assessment partner to use basic auth. Assessment partner must provide a username and password, LaunchPad will use the provided credentials for each API request sent to the assessment partner. All API requests should be made over HTTPS.

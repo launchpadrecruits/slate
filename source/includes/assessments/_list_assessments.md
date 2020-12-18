@@ -3,9 +3,7 @@
 > Sample list assessment request to assessment partner:
 
 ```shell
-curl -H "Content-Type: application/json" \
-  -X GET \
-  'https://www.partner.com/api/list_assessments?partner_account_id=12345'
+GET 'https://www.partner.com/api/list_assessments?partner_account_id=12345'
 ```
 
 LaunchPad will first need to retrieve the list of assessments from the Assessment Partner using the `list_assessments` API endpoint. We will show the list of available assessments to the user, who will to select the appropriate 3rd party assessment to be included in a LaunchPad Assessment Flow.

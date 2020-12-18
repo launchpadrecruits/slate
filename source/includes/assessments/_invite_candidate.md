@@ -3,12 +3,7 @@
 > Sample invite candidate request to assessment partner:
 
 ```shell
-# assuming that there is a file named body.json
-# containing the JSON data
-
-curl -H "Content-Type: application/json" \
-  -X POST -d @body.json \
-  'https://www.partner.com/api/invite_candidate'
+POST -d @body.json 'https://www.partner.com/api/invite_candidate'
 ```
 
 When LaunchPad needs to send a candidate to a 3rd party assessment, LaunchPad will send a request to the Assessment Partner’s `invite_candidate` API endpoint. The candidate will then be redirected to the assessment URL provided by the Assessment Partner. Alternatively, an email can be sent to the candidate that contains the third party assessment details.
