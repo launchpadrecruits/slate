@@ -3,12 +3,18 @@
 > Sample list assessment request to assessment partner:
 
 ```shell
-GET 'https://www.partner.com/api/list_assessments?partner_account_id=12345'
+GET 'https://www.partner.com/api/list_assessments?partner_account_id=12345&partner_uuid=1234-abcd'
 ```
 
 LaunchPad will first need to retrieve the list of assessments from the Assessment Partner using the `list_assessments` API endpoint. We will show the list of available assessments to the user, who will to select the appropriate 3rd party assessment to be included in a LaunchPad Assessment Flow.
 
 Third party assessment IDs can be manually added into LaunchPad if necessary.
+
+<h2 id="list-assessment-request">Request</h2>
+Parameter             | Description
+----------------------|-------------------------------------------------------------
+partner_account_id    | Partner provided. Identifies the client/customer account in the partner system
+partner_uuid          | Provided by LaunchPad. Identifies the partner instance in LaunchPad
 
 <h2 id="list-assessment-response">Response</h2>
 
