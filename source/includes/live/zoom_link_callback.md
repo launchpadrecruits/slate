@@ -13,7 +13,6 @@ Using the Zoom link would allow users to access the assessment directly skipping
 
 ```json
 {
-{
     "candidate": {
         "id": "cnd_chuvacheness123",
         "first_name": "harry",
@@ -33,6 +32,10 @@ Using the Zoom link would allow users to access the assessment directly skipping
  
     "metadata": {
         "timestamp": "2018-01-24T15:25:00.000Z"
+    },
+
+    "overall_status": {
+        "status": "In Progress"
     }
 }
 ```
@@ -104,3 +107,20 @@ custom_invite_id|String   | **Yes**         |Custom identifier for the invite re
 Parameter    | Type    | Always present? | Description
 ------------ |---------|-----------------|------------
 timestamp    | String  | **Yes**         |Date and time when the event occurred
+
+### Overall Status Object
+> Overall status object request body snippet
+
+```json
+{
+    #..snip..
+    "overall_status": {
+        "status": "In Progress"
+    }
+	#..snip..
+}
+```
+
+Parameter    | Type    | Always present? | Description
+------------ |---------|-----------------|------------
+status       |String   | **Yes**         |Flag to determine the current progress of the entire candidate flow (In Progress, Completed)

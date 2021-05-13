@@ -14,41 +14,47 @@ LaunchPad sends callbacks to the partner application regarding the candidate sco
 
 ```json
 {
-    "candidate": {
-        "id": "cnd_71419fjasdfsdak123",
-		    "email": "hpotter@hogwarts.com",
-			"custom_invite_id": "123test"
-	},
-	
-	"interview": {
-		"id": "123"
-	},
-    
-	"result_details": {
-		"status": "reviewed",
-		"average_score": "50",
-		"total_score": "150",
-		"reviewers": [{
-				"email": "adumbledore@hogwarts.com",
-				"score": "50",
-				"comment": "Reviewer 1 comment"
-			},
-			{
-				"email": "mmcgonagall@hogwarts.com",
-				"score": "50",
-				"comment": "Reviewer 2 comment"
-			},
-			{
-				"email": "ssnape@hogwarts.com",
-				"score": "50",
-				"comment": "Reviewer 3 comment"
-			}
-		]
-	},
-	
-	"metadata": {
-		"timestamp": "2018-01-24T15:25:00.000Z"
-    }
+  "candidate": {
+    "id": "cnd_71419fjasdfsdak123",
+    "email": "hpotter@hogwarts.com",
+    "custom_invite_id": "123test"
+  },
+
+  "interview": {
+    "id": "123"
+  },
+
+  "result_details": {
+    "status": "reviewed",
+    "average_score": "50",
+    "total_score": "150",
+    "reviewers": [
+      {
+        "email": "adumbledore@hogwarts.com",
+        "score": "50",
+        "comment": "Reviewer 1 comment"
+      },
+      {
+        "email": "mmcgonagall@hogwarts.com",
+        "score": "50",
+        "comment": "Reviewer 2 comment"
+      },
+      {
+        "email": "ssnape@hogwarts.com",
+        "score": "50",
+        "comment": "Reviewer 3 comment"
+      }
+    ]
+  },
+
+  "metadata": {
+    "timestamp": "2018-01-24T15:25:00.000Z"
+  },
+
+  "overall_status": {
+    "status": "In Progress"
+  }
+}
 ```
 
 ### Candidate Object
@@ -165,3 +171,20 @@ comment      |String   | **Yes**         |Comment the reviewer gave for the cand
 Parameter    | Type    | Always present? | Description
 ------------ |---------|-----------------|------------
 timestamp    | String  | **Yes**         |Date and time when the event occurred
+
+### Overall Status Object
+> Overall status object request body snippet
+
+```json
+{
+    #..snip..
+    "overall_status": {
+        "status": "In Progress"
+    }
+	#..snip..
+}
+```
+
+Parameter    | Type    | Always present? | Description
+------------ |---------|-----------------|------------
+status       |String   | **Yes**         |Flag to determine the current progress of the entire candidate flow (In Progress, Completed)

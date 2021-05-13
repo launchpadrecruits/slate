@@ -54,7 +54,8 @@ Completed   | Candidate has completed the third party assessment and provided al
     "Completed": "9:10 AM 03 May 2017",
     "Comments": "Great!",
     "timestamp": "2016-10-20T08:45:15Z"
-  }
+  },
+  "overall_status": "In Progress"
 }
 ```
 
@@ -66,6 +67,7 @@ partner         | Object  | **Yes**   | Contains partner details. Refer to the [
 result_details  | Object  | **Yes**   | Contains result details. Refer to the [results detail object section](#result-details-object).
 interview       | Object  | **Yes**   | Contains interview details. Refer to the [interview object section](#assessment-status-interview-object)
 metadata        | Object  | **Yes**   | Contains metadata
+overall_status  | String  | **Yes**   | Flag to determine the current progress of the entire candidate flow (In Progress, Completed)
 
 <h3 id="assessment-status-partner-object">Partner Object</h3>
 
